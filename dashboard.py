@@ -15,6 +15,7 @@ while True:
 
     try:
 
+        # API Calls
         summary = requests.get(
             "http://127.0.0.1:8000/metrics/summary"
         ).json()
@@ -27,8 +28,13 @@ while True:
             "http://127.0.0.1:8000/metrics/billing"
         ).json()
 
+        staff = requests.get(
+            "http://127.0.0.1:8000/metrics/staff"
+        ).json()
+
         with placeholder.container():
 
+            # Top Metrics
             col1, col2, col3, col4 = st.columns(4)
 
             col1.metric(
@@ -51,18 +57,20 @@ while True:
                 summary.get("occupancy", 0)
             )
 
+            # Zone Analytics
             st.subheader("Zone Analytics")
-
             st.json(zones)
 
+            # Billing Metrics
             st.subheader("Billing Metrics")
-
             st.json(billing)
+
+            # Staff Metrics
+            st.subheader("Staff Metrics")
+            st.json(staff)
 
         time.sleep(2)
 
     except Exception as e:
-
         st.error(f"API ERROR: {e}")
-
         time.sleep(2)
