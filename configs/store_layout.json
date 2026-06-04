@@ -1,0 +1,117 @@
+{
+  "STORE_BLR_002": {
+
+    "entry_direction": "right_to_left",
+
+    "cameras": {
+
+      "CAM_ENTRY_01": {
+        "type": "ENTRY",
+        "line_position": 480,
+        "camera_type": "horizontal",
+        "visible_zones": []
+      },
+
+      "CAM_FLOOR_01": {
+        "type": "FLOOR",
+        "visible_zones": [
+          "SKINCARE",
+          "MAKEUP"
+        ]
+      },
+
+      "CAM_BILLING_01": {
+        "type": "BILLING",
+        "visible_zones": [
+          "BILLING"
+        ]
+      }
+    },
+
+    "zones": {
+
+      "SKINCARE": {
+        "x1": 50,
+        "y1": 100,
+        "x2": 300,
+        "y2": 300
+      },
+
+      "MAKEUP": {
+        "x1": 320,
+        "y1": 100,
+        "x2": 600,
+        "y2": 300
+      },
+
+      "BILLING": {
+        "x1": 150,
+        "y1": 100,
+        "x2": 700,
+        "y2": 650
+      }
+    }
+  },
+
+  "STORE_BLR_003": {
+
+    "entry_direction": "left_to_right",
+
+    "cameras": {
+
+      "CAM_ENTRY_01": {
+        "type": "ENTRY",
+        "line_position": 520,
+        "camera_type": "horizontal",
+        "visible_zones": []
+      },
+
+      "CAM_FLOOR_01": {
+        "type": "FLOOR",
+        "visible_zones": [
+          "SALM",
+          "TFS",
+          "LOREAL"
+        ]
+      },
+
+      "CAM_BILLING_01": {
+        "type": "BILLING",
+        "visible_zones": [
+          "BILLING"
+        ]
+      }
+    },
+
+    "zones": {
+
+      "SALM": {
+        "x1": 100,
+        "y1": 70,
+        "x2": 200,
+        "y2": 300
+      },
+
+      "TFS": {
+        "x1": 250,
+        "y1": 110,
+        "x2": 400,
+        "y2": 400
+      },
+
+      "LOREAL": {
+        "x1": 700,
+        "y1": 390,
+        "x2": 980,
+        "y2": 850
+      },
+
+      "BILLING": {
+        "x1": 180,
+        "y1": 220,
+        "x2": 420,
+        "y2": 520
+      }
+    }
+  }
+}
